@@ -72,7 +72,7 @@ return Class.create(/** @lends View.prototype */{
         var obj = this, parent;
         while(parent = obj.parent) obj = parent;
         //NOTE: don't use `instanceof` to prevent circular module requirement.
-        //But it's not a very reliable way to check it's a stage instance.
+        //But it's not a very reliable way to check if it's a stage instance.
         if(obj.canvas) return obj;
         return null;
     },
